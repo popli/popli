@@ -913,14 +913,13 @@ h2 i[class^="icon-"], h2 i[class*=" icon-"], h2 i.fa {
 		
 /* STAMP */
 .stamp {
- 	position: relative; float: left; margin-right: 1em; width: 114px; height: 134px; background: url(../images/bckg/stamp.png) 0 0 no-repeat;
+ 	position: relative; float: left; margin-right: 1em; 
 	}
 .stamp:after {
- 	content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(../images/bckg/stamp-mask.png) 0 0 no-repeat;
+ 	content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
 	}
 	.stamp img {
-		display: block; width: 94px; height: 114px; position: absolute; top: 10px; left: 10px;
-		}
+		display: block;  height: 130px; 		}
 		
 /* LETTER */		
 .letter {
@@ -961,6 +960,12 @@ h2 i[class^="icon-"], h2 i[class*=" icon-"], h2 i.fa {
 		.social li a.rss:before {
  			content: '\e80b'
 			}
+       
+            .social li a.wordpress:before {
+ 			content: '\e816'
+			}
+
+           
 		.social li a.dribbble:before {
  			content: '\e806'
 			}
@@ -1003,8 +1008,8 @@ h2 i[class^="icon-"], h2 i[class*=" icon-"], h2 i.fa {
 		.social li a.github:before {
  			content: '\e805'
 			}
-		.social li a.wordpress:before {
- 			content: '\e816'
+		.social li a.quora:before {
+ 			content: '\e831'
 			}
 		.social li a.google-plus:before {
  			content: '\e803'
@@ -1044,6 +1049,9 @@ h2 i[class^="icon-"], h2 i[class*=" icon-"], h2 i.fa {
 			}
 		.social li a.facebook:hover {
  			background-color: #3c5fac
+			}
+.social li a.quora:hover {
+ 			background-color: #a62100
 			}
 		.social li a.twitter:hover {
  			background-color: #5ec3df

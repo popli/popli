@@ -1,10 +1,3 @@
-/*
-	Name: cvCard
-	Description: Responsive HTML5 vCard Template
-	Version: 1.0
-	Author: pixelwars
-*/
-
 
 
 /* global variables */
@@ -78,12 +71,7 @@ var $container, $blog_container;
 		
 		
 		
-		// ------------------------------
-		// SEARCH
-		$('.search-link').click(function() {
-			$(this).toggleClass('active');
-			$('.header-search').slideToggle();
-		});
+	
 		// ------------------------------
 		
 		
@@ -235,12 +223,6 @@ var $container, $blog_container;
 		
 		
 		
-		// ------------------------------
-		// CODE PRETTIFY
-		if($('.prettyprint').length) {
-			window.prettyPrint && prettyPrint();
-		}
-		// ------------------------------
 		
 		
 		
@@ -292,25 +274,9 @@ var $container, $blog_container;
 		
 		
 		
-		// ------------------------------
-		// RESPONSIVE VIDEOS
-		if($('.media-wrap, .portfolio-single').length) {
-			$(".media-wrap, .portfolio-single").fitVids();
-		}
-		// ------------------------------
 		
 		
-		
-		// ------------------------------
-		// UNIFORM
-		$("select:not([multiple]), input:checkbox, input:radio, input:file").uniform();
-		var ua = navigator.userAgent.toLowerCase();
-		var isAndroid = ua.indexOf("android") > -1;
-		if(isAndroid) {
-			$('html').addClass('android');
-		}
-		// ------------------------------
-		
+
 		
 		
 		// ------------------------------
@@ -358,37 +324,8 @@ var $container, $blog_container;
 		}
 		// ------------------------------
 		
-		
-		// ------------------------------
-		/* MEDIAELEMENT.JS - self hosted html5 video and audio player */
-		if($('video,audio').length) {
-			$('video,audio').mediaelementplayer({ audioHeight: 50 });	
-		}
-		// ------------------------------
-		
-		
-		// ------------------------------
-		// FORM VALIDATION
-		// comment form validation fix
-		$('#commentform').addClass('validate-form');
-		$('#commentform').find('input,textarea').each(function(index, element) {
-            if($(this).attr('aria-required') == "true") {
-				$(this).addClass('required');
-			}
-			if($(this).attr('name') == "email") {
-				$(this).addClass('email');
-			}
-		});
-		
-		// validate form
-		if($('.validate-form').length) {
-			$('.validate-form').each(function() {
-					$(this).validate();
-				});
-		}
-		// ------------------------------
-		
-		
+	
+	
 		// ------------------------------
 		// FILL SKILL BARS
 		fillBars();
